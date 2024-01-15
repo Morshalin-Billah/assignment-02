@@ -15,7 +15,7 @@
 
 
 
-
+/* 01. navbar  */
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,7 @@ nav {
     height: 100px;
     width: 90%;
     margin: 30px 5%;
+
 }
 
 nav .logo, ul {
@@ -52,6 +53,7 @@ nav a {
     font-weight: 400;
     color: #424247;
     text-decoration: none;
+    /* border: 2px solid red; */
 }
 
 
@@ -63,8 +65,144 @@ a.active , a:hover {
 
 nav li {
     list-style: none;
-    margin-right: 40px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 0 5px;
 }
+
+
+
+
+/* 02. banner */
+.banner {
+    width: 90%;
+    margin: 30px 5%;
+    height: 500px;
+
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.836), transparent), url('../Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat;
+    background-size: cover;
+
+    
+
+}
+
+.banner h1 {
+    margin-bottom: 40px;
+    font-size: 64px;
+}
+
+.banner p {
+    margin-bottom: 70px;
+}
+
+.banner h1,p {
+    width: 60%;
+    text-align: center;
+}
+
+
+.drop-down-container {
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+
+
+
+
+.drop-down-container form {
+    margin-left: 20px;
+}
+
+.drop-down-container button{
+    background-color: #FF5400;
+    color: white;
+}
+
+
+.drop-down-box {
+    width: 200px;
+    height: 65px;
+    margin-top: 17px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    color: #424247;
+}
+
+
+.drop-down-container button i{
+    margin-right: 15px;
+}
+
+
+.section-01 {
+    width: 90%;
+    margin: 30px 5%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-01 h1, ul, p {
+    margin-bottom: 30px;
+}
+
+.section-01 h1 {
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+.section-01 div, img {
+    width: 45%;
+}
+
+.section-01 img {
+    height: 470px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,5 +226,25 @@ nav li {
     nav .hamburger {
         display: block;
         margin-right: 10px;
+    }
+
+    .banner {
+        height: 800px;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size:32px;
+
+    }
+
+    .drop-down-container {
+        width: 80%;
+        height: 345px;
+    }
+
+    .drop-down-box {
+        width: 90%;
+        margin-left: 8px;
     }
 }
