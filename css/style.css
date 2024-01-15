@@ -1,0 +1,92 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap');
+
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    margin: 30px 5%;
+}
+
+nav .logo, ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav .logo > img {
+    margin-right: 15px;
+}
+
+nav .logo h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav .logo span {
+    color: #FF5400;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424247;
+    text-decoration: none;
+}
+
+
+a.active , a:hover {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+
+nav li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for mobile */
+@media screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+}
