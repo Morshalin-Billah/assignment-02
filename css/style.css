@@ -23,7 +23,9 @@ body {
 
 
 
-/* 01. navbar  */
+
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,7 +38,6 @@ nav>.logo, ul {
     display: flex;
     align-items: center;
 }
-
 
 
 nav .hamburger {
@@ -53,7 +54,6 @@ nav .logo > h2 {
     display: flex;
     flex-direction: row;
 }
-
 
 
 nav .logo h2 > span {
@@ -89,8 +89,6 @@ nav li {
 
 
 
-
-/* 02. banner */
 .banner {
     margin: 30px 0;
     height: 575px;
@@ -100,7 +98,7 @@ nav li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.836), transparent), url('../Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat;
     background-size: contain;
 }
 
@@ -158,7 +156,6 @@ nav li {
 }
 
 
-
 .drop-down-container > button{
     background-color: #FF5400;
     color: white;
@@ -166,7 +163,7 @@ nav li {
 }
 
 
-
+/* ---------------------------------------------------------------------------- */
 
 
 
@@ -239,8 +236,13 @@ nav li {
 
 
 
+  
 
-/* section 02 */
+
+
+
+
+
 .section-02 {
     margin-bottom: 100px;
 }
@@ -313,7 +315,6 @@ nav li {
 
 
 
-/* section 03 */
 .section-03 {
     width: 100%;
     margin-bottom: 100px;
@@ -386,7 +387,6 @@ nav li {
 
 
 
-/* section 04 */
 
 .section-04 {
     height: 500px;
@@ -476,6 +476,13 @@ input::placeholder {
 
 
 
+
+
+
+
+
+
+
 footer {
     background: rgba(19, 19, 24, 0.05);
     height: 500px;
@@ -543,7 +550,11 @@ footer {
 
 
 
+/* responsive for Large screen & Laptop (start from 992px) */
 
+@media screen and (min-width:992px) {
+    
+}
 
 
 
@@ -556,71 +567,14 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* responsive for mobile */
+/* responsive for mobile devices (ends at 600px)*/
 @media screen and (max-width: 600px) {
 
     body {
-        width: 95%;
-        /* overflow-x: hidden; */
+        width: 100%;
+        padding:0 5%;
     }
-
+    
 
     nav ul{
         display: none;
@@ -628,26 +582,257 @@ footer {
 
     nav .hamburger {
         display: block;
-        margin-right: 10px;
+
     }
 
+    nav > .logo> h2 {
+        font-size: 1.6rem;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+    
+
     .banner {
-        height: 800px;
+        height: 650px;
         justify-content: center;
+        background-size: cover;
     }
 
     .banner h1 {
-        font-size:22px;
+        font-size:1.6rem;
+        margin-top: 20px;
+    }
 
+    .banner> p {
+        margin-bottom: 30px;
     }
 
     .drop-down-container {
-        width: 80%;
-        height: 345px;
+        width: 65%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .drop-down-box {
         width: 90%;
-        margin-left: 8px;
+        margin: 10px auto;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
     }
+
+    .drop-btn  {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
+    
+    .section-01 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 1150px;
+    }
+    
+    .section-01 > .text-portion {
+        width: 100%;
+    }
+
+    .text-portion > h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-portion > button {
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+
+    .section-01 > img {
+        width: 100%;
+
+    }
+
+
+
+
+    
+
+    .section-02 {
+        width: 100%;
+        height: 2200px;
+    }
+
+    .choose-destination > h2 {
+        font-size: 26px;
+
+    }
+
+    .section-02 .choose-destination {
+        text-align: center;
+        margin-bottom: 40px;
+        width: 80%;
+        height: auto;
+    }
+
+
+    .grid-container > .row {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .row > img {
+        width: 100%;
+        height: 278px;
+    }
+
+
+    .section-02> .grid-container>.colum3> #img2 {
+        width: 100%;
+        height: 278px;
+    }
+
+    .section-02> .grid-container>.colum3> #img1 {
+        width: 100%;
+        height: 278px;
+
+    }
+
+    container>.colum3> #img3 {
+        width: 100%;
+        height: 278px;
+    }
+
+    .section-02> .grid-container>.colum2> #img4 {
+        width: 100%;
+        height: 278px;
+    }
+
+    .section-02> .grid-container>.colum3> #img3 {
+        width: 100%;
+    }
+
+
+    .section-02> .grid-container>.colum2> #img5 {
+        width: 100%;
+        height: 278px;
+    }
+
+
+    .section-03 > .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container1 div{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .container2 {
+        width: 100%;
+        height: 350px;
+        margin: 0px auto;
+    }
+
+
+
+    .section-04 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section-04 .newsletter-portion {
+        width: 100%;
+    }
+
+    .section-04 .badge-box {
+        width: 100%;
+        height: 430px;
+        margin-top: 50px;
+        background-color: red;
+        border: 2px solid black;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .badge {
+        height: 100px;
+        width: 300px;
+        left: 150px;
+        top: 270px;
+
+    }
+
+    .badge h3 {
+        font-size: 24px;
+    }
+
+    .badge a {
+        font-size: 15px;
+    }
+
+
+
+
+    footer {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .footer-section {
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    .last-logo-portion {
+        font-size: 30px;
+    }
+    
+    .footer-section .last-logo-portion {
+        padding-top: 0;
+
+    }
+
+    .last-logo-portion > img {
+        height: 42px;
+    }
+
+}
+
+
+
+
+/* for smaller moblie devices  */
+@media screen and (max-width: 490px) {
+    .badge {
+        height: 70px;
+        width: 200px;
+        top: 315px;
+        left: 90px;
+
+    }
+
+    .footer-section .social-handles {
+        margin-left: 0;
+        padding-left: 32px;
+    }
+
 }
